@@ -1,0 +1,333 @@
+html{background-color: #fff}
+body{
+	position: relative;
+	background-image:url('../img/background.jpg');
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	height: 100vh;
+	z-index: -10000;
+	overflow: hidden;
+}
+/* 楼层 */
+.floor{
+	position: absolute;
+	bottom:52vh;
+	right:0;
+	height: 98vh;
+	width: 4.5rem;
+}
+.floor_num{
+	position: relative;
+	background-image: url('../img/top.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 50%;
+}
+.floor_bottom {
+	position: relative;
+	background-image: url('../img/bottom.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 50%;
+}
+.floor_num .num,.floor_bottom .num{
+	color:#e0a577;
+	position: absolute;
+	width: 1rem;
+	text-align: center;
+	top:76%;
+	left:50%;
+	color:#fff;
+	font-size: 2em
+}
+.floor_num .num:first-child,.floor_bottom .num{
+	top:26%;
+	left: 46%;	
+}
+.footer {
+	position: absolute;
+	bottom:-1vh;
+}
+.footer img{
+	height: 3vh;
+	width: 10rem;
+}
+/* 标题 */
+.title {
+	position: absolute;
+	top:20%;
+}
+.title img{
+	width: 6rem;
+	height: 7rem
+}
+/* 合作logo */
+.logo {
+	position: absolute;
+	left: 2.5rem;
+	top:0.5rem;
+}
+.logo img{
+	width: 2rem;
+	height: 1.8rem;
+}
+/* 底部文字 */
+.bottom_text {
+	position: absolute;
+	text-align: center;
+	bottom: 4px;
+	left: 0px;
+	right: 0px;
+	margin:auto;
+	width: 8rem;
+}
+.bottom_text img{
+	width: 8rem;
+}
+/* 人物 */
+.animate{
+	position: absolute;
+	left:8%;
+	bottom:5%;
+}
+.animate img{
+	height: 2rem;
+}
+/* 云 */
+.cloud {
+	position: absolute;
+	top:.5rem;
+	left: -1rem;
+	z-index: -10;
+}
+.cloud img{
+	height: 12rem;
+}
+/* 操作按钮 */
+.msg {
+	padding-top: 0.5rem;
+}
+.msg img{
+	width: 2rem;
+	height: 0.9rem
+}
+.back_btn {
+	display: none;
+	position: relative;
+	z-index: 100;
+}
+/* 进入按钮 */
+.entry_btn img{
+	width:2.5rem;
+	height: 1.5rem;
+	position: absolute;
+	bottom:8%;
+	left: 28%;
+}
+/* 问题文本框 */
+.question_block_all {
+	display: none;
+	box-sizing: border-box;
+	padding:0.5rem 1rem 0px 0.6rem;
+	color: #8c4105;
+	position: absolute;
+	top:25%;
+	left:5%;
+	background-image: url('../img/textframe.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 55%;
+	z-index: 2;
+	padding-bottom:0.8rem;
+	line-height: 1.5em;
+}
+.question_block_all .que_num{
+	text-align: center;
+	margin-bottom: 0.2rem;
+}
+.question_block_all .solid{
+	margin:0.5rem auto 0.5rem auto;
+	width: 80%;
+	height:3px;
+	background-image: url('../img/solid.png');
+	background-size: 100%;
+}
+.question_block_all label{
+	margin-left: 0.5em;
+	text-indent:1.5em;
+	line-height: 1.8em;
+	display: block;
+	background-image: url('../img/noactive.png');
+	background-size: 1em;
+	background-repeat: no-repeat;
+	background-position: 0em 0.5em;
+}
+.question_block_all label.active{
+	background-image: url('../img/active.png');
+}
+.question_block_all input{
+	display: none;
+}
+.question_block_all button {
+	display: block;
+	width: 40%;
+	height: 12%;
+	position: absolute;
+	bottom: -1em;
+	left: 25%;
+	background-color: transparent;
+	background-image: url('../img/btn.png');
+	background-size: 100% 100%;
+}
+/* 答错模拟框 */
+.fail {
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 10rem;
+	height: 100vh;
+	background-color: rgba(0,0,0,.7);
+	z-index: 100000;
+}
+.fail_background img{
+	width: 8rem;
+	height: 10rem;
+	margin-left: 1rem;
+	position: absolute;
+	top:0;
+	bottom:0;
+	margin-top: auto;
+	margin-bottom: auto
+}
+/* 操作模拟框 */
+.operation {
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 10rem;
+	height: 100vh;
+	background-color: rgba(0,0,0,.7);
+	z-index: 10;
+}
+
+/* 登顶 */
+/* 楼层 */
+.background{
+	position:absolute;
+	left: 0;
+	right:0;
+	margin:auto;
+	bottom: -0.5em;
+	width: 7rem;
+	height: 70vh;
+	z-index: -1
+}
+.background img{
+	width: 7rem;
+	height: 70vh
+}
+/* 动画人物 */
+.winner_animate{
+	position: absolute;
+	left:38%;
+	bottom:28vh;
+}
+.winner_animate img{
+	height: 2.5rem;
+}
+/* 庆祝 */
+.content {
+	height: 50vh
+}
+.content .congratulation {
+	display: block;
+	width: 7rem;
+	height: 20%;
+	margin: auto;
+}
+.content a img{
+	display: block;
+	margin: auto;
+	width: 6rem;
+	margin-top: 0.4rem;
+	height: 1.5rem;
+}
+/* 输入信息页面 */
+.content2{width: 10rem;display: none}
+.content2 .congratulation {
+	display: block;
+	width: 7rem;
+	height: 25%;
+	margin: auto;
+}
+.name{background-image: url('../img/name.png');}
+.phonenumb{background-image: url('../img/phonenumb.png');}
+.name,.phonenumb{
+	position: relative;
+	float: left;
+	width: 4.2rem;
+	height: 0.9rem;
+	margin-top: 0.5rem;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-left: 0.6rem
+}
+.phonenumb{
+	margin-left: 0.4rem;
+}
+.name input,.phonenumb input{
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:1.5rem;
+	margin:auto;
+	width: 2.5rem;
+	height: 1em;
+	line-height: 1.5em;
+	font-size: 1em;
+	background-color: #fedb7f;
+	color:#b07444;
+}
+.submit_btn button{
+	display: block;
+	width: 3.5rem;
+	height:1rem;
+	margin: auto;
+	margin-top: 0.5rem;
+	background-image: url('../img/submit_btn.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-color: transparent;
+}
+
+/* 提交成功与否 */
+.submit_or_not {
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 10rem;
+	height: 100vh;
+	background-color: rgba(0,0,0,.7);
+	z-index: 10;
+}
+.submit_or_not .submit_success,.submit_or_not .submit_fail{
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 3em;
+	width: 10em;
+	line-height: 3em;
+	margin:auto;
+	display: none
+}
+.submit_or_not p{
+	color: #fff;
+	text-align: center;
+	font-size: 2em;
+}
